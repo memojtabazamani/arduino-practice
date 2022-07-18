@@ -12,7 +12,7 @@ void loop() {
     ch = Serial.read();
     if (ch == '1') {
       digitalWrite(led, HIGH); // Turn On LED
-    } else {
+    } else if (ch == '0') {
       digitalWrite(led, LOW); // Turn Off LED
     }
   }
